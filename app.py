@@ -44,6 +44,6 @@ def upload_file():
         file.save(file_path)
         result = predict_image(file_path)
         return render_template('result.html', result=result, image_path=file.filename)
-
+#main
 if __name__ == '__main__':
     app.run(debug=True)
